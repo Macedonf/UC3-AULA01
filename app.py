@@ -10,7 +10,7 @@ def index():
         nome = request.form.get("nome") #atributo name do formulário
 
         #gera msg
-        mensagem = f"Olá{nome}!\nMensagem: {mensagens.obter_mensagem_aleatoria()}"
+        mensagem = f"Olá, {nome}! \nMensagem: {mensagens.obter_mensagem_aleatoria()}"
 
         #renderizar pagina com msg
         return render_template("index.html" , texto = mensagem)
