@@ -1,0 +1,14 @@
+Objetivo: Criar um web app oferecendo os recursos:
+- Adicionar nova tarefa
+-Exibir a lista de tarefas
+- Marcar tarefas como concluídas
+-Remover tarefas concluidas da lista
+
+
+Permitir que trabalhem os seguintes cpnceitos:
+
+-Rotas
+-Renderização
+-Interaçao de dados
+-Organização dos dados
+-Persistência de dados * SQL lite
