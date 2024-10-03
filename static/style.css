@@ -1,0 +1,33 @@
+body{
+    font-family: arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+
+}
+
+h1 { color: #333}
+
+form{
+    margin-bottom: 20px;
+
+}
+
+ul {}
+
+li {
+    margin:5px 0;
+}
+
+del{
+    color: gray;
+}
+
+a{
+    margin-left: 10px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.remover{
+    color: red;
+}
