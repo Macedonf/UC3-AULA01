@@ -12,3 +12,6 @@ Permitir que trabalhem os seguintes cpnceitos:
 -Interaçao de dados
 -Organização dos dados
 -Persistência de dados * SQL lite
+
+task = tarefa
+toda classe tem que ter a primeira letra maiuscula
