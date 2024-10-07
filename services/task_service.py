@@ -12,7 +12,6 @@ class TaskService:
         nova_tarefa = Task(conteudo, False) # Task(conteudo, False) é a instanciação da classe Task
         self.tarefas.append(nova_tarefa) # Adição da nova tarefa na lista
 
-
     def listar_tarefas(self):
         return self.tarefas
 

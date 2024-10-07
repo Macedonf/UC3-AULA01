@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7f3451-91ba-4fc6-a83a-0aa296dcda51" name="Changes" comment="projeto todo">
-      <change afterPath="$PROJECT_DIR$/controlers/task_controler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/task_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/task_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlers/task_controler.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/task_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/task_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/task_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rascunho" beforeDir="false" afterPath="$PROJECT_DIR$/rascunho" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/task_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/task_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Aula04" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +72,8 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Aula04&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Aula05&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matheus Macedo/PycharmProjects/todo&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -126,7 +129,12 @@
       <workItem from="1727961756686" duration="3644000" />
       <workItem from="1728078989274" duration="187000" />
       <workItem from="1728079211981" duration="8871000" />
-      <workItem from="1728171224684" duration="296000" />
+      <workItem from="1728171224684" duration="578000" />
+      <workItem from="1728171862841" duration="5442000" />
+      <workItem from="1728238150421" duration="81000" />
+      <workItem from="1728238312754" duration="3301000" />
+      <workItem from="1728336886982" duration="2504000" />
+      <workItem from="1728339432840" duration="3815000" />
     </task>
     <task id="LOCAL-00001" summary="projeto todo">
       <option name="closed" value="true" />
@@ -152,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727965413330</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="projeto todo">
+      <option name="closed" value="true" />
+      <created>1728171641399</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728171641399</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +190,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="projeto todo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1727964609176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1728343466180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
