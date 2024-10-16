@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7f3451-91ba-4fc6-a83a-0aa296dcda51" name="Changes" comment="aula06 banco de dados">
-      <change afterPath="$PROJECT_DIR$/configurations/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurations/sql_commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/user_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repositories/task_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requeriments" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form_user.html" afterDir="false" />
+    <list default="true" id="2a7f3451-91ba-4fc6-a83a-0aa296dcda51" name="Changes" comment="criacao de usuario e interacao com supabase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/task_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/task_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/task_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/task_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/task_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/task_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Aula05" />
+        <entry key="$PROJECT_DIR$" value="Aula06" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +67,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Aula06&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Aula08&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Matheus Macedo/PycharmProjects/invent-cicle&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -146,7 +135,8 @@
       <workItem from="1728690850163" duration="6915000" />
       <workItem from="1728941009554" duration="3439000" />
       <workItem from="1728944692380" duration="4320000" />
-      <workItem from="1729099153036" duration="3494000" />
+      <workItem from="1729099153036" duration="5118000" />
+      <workItem from="1729113393427" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="projeto todo">
       <option name="closed" value="true" />
@@ -196,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728434820847</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="criacao de usuario e interacao com supabase">
+      <option name="closed" value="true" />
+      <created>1729110285272</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729110285272</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +215,8 @@
     <MESSAGE value="projeto todo" />
     <MESSAGE value="projeto todo alterações" />
     <MESSAGE value="aula06 banco de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula06 banco de dados" />
+    <MESSAGE value="criacao de usuario e interacao com supabase" />
+    <option name="LAST_COMMIT_MESSAGE" value="criacao de usuario e interacao com supabase" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1728946169295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
