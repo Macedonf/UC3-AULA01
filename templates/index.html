@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventário de Bicicletas</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 <h1>Inventário de Bicicletas</h1>
@@ -14,7 +14,7 @@
     <input type="text" name="modelo" placeholder="Modelo" required>
     <input type="text" name="categoria" placeholder="Categoria" required>
     <input type="number" step="0.01" name="preco" placeholder="Preço" required>
-    <select name="status" required>
+    <select name="status" required>  <!-- Corrigido para 'status' -->
         <option value="disponivel">Disponível</option>
         <option value="indisponivel">Indisponível</option>
     </select>
@@ -25,20 +25,18 @@
 <ul>
     {% for bicicleta in bicicletas %}
     <li>
-        {% if not bicicleta.disponivel %}
+        {% if bicicleta.status == 'indisponivel' %}  <!-- Corrigido para 'status' -->
             <del>{{ loop.index }} - Modelo: {{ bicicleta.modelo }} | Categoria: {{ bicicleta.categoria }} | Preço: R$ {{ bicicleta.preco }}</del>
         {% else %}
             {{ loop.index }} - Modelo: {{ bicicleta.modelo }} | Categoria: {{ bicicleta.categoria }} | Preço: R$ {{ bicicleta.preco }}
-        {% endif %}
+        {% endif %} <!-- Fechando o if corretamente -->
 
-        {% if bicicleta.disponivel %}
-            <a class="remover" href="{{ url_for('bike.remover', bicicleta_id=loop.index0) }}">[Remover]</a>
-            <a class="indisponibilizar" href="{{ url_for('bike.indisponibilizar', bicicleta_id=loop.index0) }}">[Indisponibilizar]</a>
-        {% else %}
-            <a class="remover" href="{{ url_for('bike.remover', bicicleta_id=loop.index0) }}">[Remover]</a>
-        {% endif %}
+        <a class="remover" href="{{ url_for('bike.remover', bicicleta_id=bicicleta.id) }}">[Remover]</a>
+        {% if bicicleta.status == 'disponivel' %}  <!-- Corrigido para 'status' -->
+            <a class="indisponibilizar" href="{{ url_for('bike.indisponibilizar', bicicleta_id=bicicleta.id) }}">[Indisponibilizar]</a>
+        {% endif %} <!-- Fechando o if corretamente -->
     </li>
-    {% endfor %}
+    {% endfor %} <!-- Fechando o for corretamente -->
 </ul>
 
 </body>

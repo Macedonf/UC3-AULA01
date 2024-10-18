@@ -16,10 +16,10 @@ def adicionar_bicicleta():
     modelo = request.form.get("modelo")
     categoria = request.form.get("categoria")
     preco = request.form.get("preco")
-    status = request.form.get("status")
+    status = request.form.get("status")  # Mantenha assim
 
     try:
-        bike_service.incluir_bicicleta(modelo, categoria, preco, status)
+        bike_service.incluir_bicicleta(modelo, categoria, preco, status)  # Mantenha assim
     except ValueError as e:
         return str(e), 400
 
@@ -34,7 +34,6 @@ def indisponibilizar(bicicleta_id):
         return str(e), 400
     return redirect(url_for("bike.index"))
 
-# Route for removing a bike
 @bike_blueprint.route("/removerBicicleta/<int:bicicleta_id>")
 def remover(bicicleta_id):
     try:

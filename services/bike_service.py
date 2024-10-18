@@ -1,40 +1,24 @@
-from models.bike_model import Bike
+from repositories.bike_repository import BikeRepository
+from configurations.database import db
 
 class BikeService:
-
-    def __init__(self):
-        self.bicicletas = []
-
-    def incluir_bicicleta(self, modelo, categoria, preco, status):
-        # Validações básicas para cada campo
+    def incluir_bicicleta(self, modelo, categoria, preco, status):  # Alterar de disponivel para status
         if not modelo:
             raise ValueError("O campo modelo não pode ser vazio")
         if not categoria:
             raise ValueError("O campo categoria não pode ser vazio")
         if not preco:
             raise ValueError("O campo preço não pode ser vazio")
-        if not status:
-            raise ValueError("O campo status não pode ser vazio")
+        if not status:  # Verifica o status, não disponivel
+            raise ValueError("O campo disponibilidade não pode ser vazio")
 
-        # Criação de uma nova instância de bicicleta com todos os atributos
-        nova_bicicleta = Bike(modelo, categoria, preco, status == "disponivel")
-
-        # Adiciona a nova bicicleta na lista
-        self.bicicletas.append(nova_bicicleta)
+        BikeRepository.add_bike(modelo, categoria, preco, status) 
 
     def listar_bicicleta(self):
-        return self.bicicletas
+        return BikeRepository.get_all_bikes()
 
     def vender_bicicleta(self, bicicleta_id):
-        # Marca a bicicleta como vendida/indisponível
-        if 0 <= bicicleta_id < len(self.bicicletas):
-            self.bicicletas[bicicleta_id].disponivel = False
-        else:
-            raise ValueError(f"Bicicleta com ID {bicicleta_id} não encontrada")
+        BikeRepository.indisponibilizar_bike(bicicleta_id)
 
     def remover_bicicleta(self, bicicleta_id):
-        # Remove a bicicleta da lista por ID
-        if 0 <= bicicleta_id < len(self.bicicletas):
-            self.bicicletas.pop(bicicleta_id)
-        else:
-            raise ValueError(f"Bicicleta com ID {bicicleta_id} não encontrada")
+        BikeRepository.delete_bike(bicicleta_id)
