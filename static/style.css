@@ -1,33 +1,113 @@
-body{
-    font-family: arial, sans-serif;
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
-
 }
 
-h1 { color: #333}
+h1 {
+    color: #333;
+}
 
-form{
+form {
     margin-bottom: 20px;
-
 }
 
-ul {}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
 li {
-    margin:5px 0;
+    margin: 5px 0;
 }
 
-del{
+ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input[type="text"], input[type="password"], select {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 41px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 41px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flashes .success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.flashes .danger {
+    background-color: #f44336;
+    color: white;
+}
+
+del {
     color: gray;
 }
 
-a{
+a {
     margin-left: 10px;
     color: blue;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
-.remover{
+.remover {
     color: red;
 }

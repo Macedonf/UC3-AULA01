@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de usuários</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Criar Novo Usuário</h1>
@@ -15,5 +15,14 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
+
+    <form action="{{ url_for('user.adicionar_usuario') }}" method="post">
+         <label for="username">Nome do usuário:</label>
+            <input id="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+             <button type="submit">Criar</button>
 </body>
+
 </html>
